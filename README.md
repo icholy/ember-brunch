@@ -1,4 +1,4 @@
-# Brunch with js
+# Brunch with Ember
 This is a simple ember skeleton for [Brunch](http://brunch.io/).
 
 ## Getting started
