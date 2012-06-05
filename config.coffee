@@ -1,3 +1,6 @@
+fs   = require 'fs'
+path = require 'path'
+
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   files:
@@ -23,3 +26,13 @@ exports.config =
     # templates:
     #   defaultExtension: 'hbs'
     #   joinTo: 'javascripts/app.js'
+
+  minify: false
+
+  generators:
+    model: (name)->
+      fs.readFileSync(path.join(__dirname, 'generators', 'model.js')).toString().replace("\#{name}", name)
+    view: (name)->
+      fs.readFileSync(path.join(__dirname, 'generators', 'view.js')).toString().replace("\#{name}", name)
+    controller: (name)->
+      fs.readFileSync(path.join(__dirname, 'generators', 'controller.js')).toString().replace("\#{name}", name)
