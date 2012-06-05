@@ -16,9 +16,9 @@ exports.config =
     stylesheets:
       defaultExtension: 'less'
       joinTo: 'stylesheets/app.css'
-      order:
-        before: []
-        after: []
+      # order:
+      #   before : []
+      #   after  : []
 
     # templates:
     #   defaultExtension: 'hbs'
