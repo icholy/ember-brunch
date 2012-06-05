@@ -1,9 +1,5 @@
 # Brunch with js
-This is a simple js skeleton for [Brunch](http://brunch.io/).
-
-Main languages are JavaScript,
-[Stylus](http://learnboost.github.com/stylus/) and
-[Handlebars](http://handlebarsjs.com/).
+This is a simple ember skeleton for [Brunch](http://brunch.io/).
 
 ## Getting started
 
