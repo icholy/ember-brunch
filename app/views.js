@@ -1,0 +1,1 @@
+require('views/my_view');
