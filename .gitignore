@@ -24,3 +24,5 @@ node_modules/
 
 # Brunch folder for temporary files.
 tmp/
+
+public/
