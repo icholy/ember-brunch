@@ -34,9 +34,9 @@ See more info on the [official site](http://brunch.io)
         jquery.js
         console-helper.js
         ember-0.9.8.1.js
+        bootstrap.js
       styles/
-        normalize.css
-        helpers.css
+        bootstrap.css
 
 * `config.coffee` contains configuration of your app. You can set plugins /
 languages that would be used here.
@@ -58,3 +58,4 @@ Versions of software the skeleton uses:
 
 * jQuery 1.7.2
 * Ember 0.9.8.1
+* Bootstrap 2.0.4
