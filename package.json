@@ -16,10 +16,8 @@
   },
   "dependencies": {
     "javascript-brunch": "> 1.0 < 1.3",
-
     "css-brunch": "> 1.0 < 1.3",
     "less-brunch": "> 1.0 < 1.3",
-
     "uglify-js-brunch": "> 1.0 < 1.3",
     "clean-css-brunch": "> 1.0 < 1.3"
   },
