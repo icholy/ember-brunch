@@ -1,13 +1,8 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Example brunch application</title>
-  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
@@ -16,8 +11,7 @@
 <body>
     <script type="text/x-handlebars">
         {{#view App.Views.MyView}}
-            <h1>Ember User</h1>
-            <p>{{view.stuff.fullName}}</p>
+            <h1>Click Me: {{view.content.fullName}}</h1>
         {{/view}}
     </script>
 </body>
