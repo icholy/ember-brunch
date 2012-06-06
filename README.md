@@ -9,6 +9,8 @@ See more info on the [official site](http://brunch.io)
 ## Overview
 
     config.coffee
+    server.coffee
+    package.json
     README.md
     /app/
       assets/
@@ -16,12 +18,14 @@ See more info on the [official site](http://brunch.io)
         img/
           glyphicons-halflings-white.png
           glyphicons-halflings.png
+      templates/
       models/
-      styles/
       views/
-      controllers.js
+      controllers/
+      templates.js
       models.js
       views.js
+      controllers.js
       app.js
       initialize.js
     /vendor/
@@ -33,6 +37,10 @@ See more info on the [official site](http://brunch.io)
         bootstrap.js
       styles/
         bootstrap.css
+    /public/
+      img/
+      stylesheets/
+      javascripts/
     /test/
       spec.coffee
     /generators/
