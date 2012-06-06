@@ -50,6 +50,7 @@ if you wanted to use the `empty` skeleton branch
         jquery.js
         console-helper.js
         ember-latest.js
+        ember-data-latest.js
         handlebars-1.0.0.beta.6.js
         bootstrap.js
       styles/
