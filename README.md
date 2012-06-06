@@ -11,24 +11,25 @@ See more info on the [official site](http://brunch.io)
 	config.coffee
 	README.md
 	/app/
-	/assets/
-		index.html
+    /assets/
+		  index.html
         images/
-	models/
+    models/
     styles/
     views/
-	controllers.js
- 	models.js
-	views.js
-	app.js
+    controllers.js
+    models.js
+    views.js
+    app.js
     initialize.js
     /test/
-		spec.coffee
+		  spec.coffee
     /vendor/
       scripts/
         jquery.js
         console-helper.js
-        ember-0.9.8.1.js
+        ember-latest.js
+        handlebars-1.0.0.beta.6.js
         bootstrap.js
       styles/
         bootstrap.css
@@ -56,5 +57,5 @@ This all will generate `public/` (by default) directory when `brunch build` or `
 Versions of software the skeleton uses:
 
 * jQuery 1.7.2
-* Ember 0.9.8.1
+* Ember latest
 * Bootstrap 2.0.4
