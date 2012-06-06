@@ -1,8 +1,9 @@
 fs   = require 'fs'
 path = require 'path'
 
+# See docs at http://brunch.readthedocs.org/en/latest/config.html.
+
 exports.config = 
-  # See docs at http://brunch.readthedocs.org/en/latest/config.html.
 
   files: 
     javascripts: 
@@ -18,15 +19,12 @@ exports.config =
           'vendor/scripts/ember-latest.js',
           'vendor/scripts/bootstrap.js'
           ]
-    
 
     stylesheets: 
       defaultExtension: 'less'
       joinTo: 'stylesheets/app.css'
       order:
         before: ['vendor/styles/bootstrap.css']
-    
-  
 
   generators:
     model: (name)->
