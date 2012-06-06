@@ -1,0 +1,1 @@
+require('templates/my_template');
