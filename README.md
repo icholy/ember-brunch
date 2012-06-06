@@ -6,6 +6,21 @@ This is a simple ember skeleton for [Brunch](http://brunch.io/).
 Clone the repo and run `npm install` & `brunch build`.
 See more info on the [official site](http://brunch.io)
 
+## Version
+
+* `empty` is a clean version of the skeleton with no examples
+* `no-bootstrap` this is the same as `empty` but with bootstrap removed
+* `coffee` is the same as empty but uses coffeescript
+
+## Usage
+    
+    brunch new myapp -s git://github.com/icholy/ember-brunch.git
+
+if you wanted to use the `empty` skeleton branch
+
+    git clone git://github.com/icholy/ember-brunch.git -b empty
+    brunch new myapp -s ./ember-brunch/
+
 ## Overview
 
     config.coffee
