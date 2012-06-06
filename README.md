@@ -22,6 +22,12 @@ if you wanted to use the `empty` skeleton branch
     git clone git://github.com/icholy/ember-brunch.git -b empty
     brunch new myapp -s ./ember-brunch/
 
+Once the project has been created, you can start a server by running
+
+    brunch watch --server
+
+then visit `localhost:3333`
+
 ## Overview
 
     config.coffee
