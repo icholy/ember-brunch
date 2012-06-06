@@ -1,5 +1,4 @@
-
-// Application bootstrapper.
+// Application bootstrapper
 
 var App = Em.Application.create({
     Views       : Em.Namespace.create(),
