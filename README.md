@@ -49,24 +49,19 @@ See more info on the [official site](http://brunch.io)
       view.js
       controller.js
 
-* `config.coffee` contains configuration of your app. You can set plugins /
-languages that would be used here.
-* `app/assets` contains images / static files. Contents of the directory would
-be copied to `public/` without change.
-Other `app/` directories could contain files that would be compiled. Languages,
-that compile to JS (coffeescript, roy etc.) or js files and located in app are 
-automatically wrapped in module closure so they can be loaded by 
-`require('module/location')`.
+* `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
+* `app/` and subdirectories (excluding `app/assets`) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via `require('module/location')`.
+* `app/assets` contains images / static files. The contents of the directory are copied to `public/` without any modification.
 * `app/templates.js`, `app/models.js`, `app/views.js`, and `app/controllers.js` are loaded in `initialize.js` and are responsible for loading their respective classes.
 * `test/` contains unit tests.
 * `vendor/` contains all third-party code. The code wouldn’t be wrapped in
 modules, it would be loaded instantly instead.
 
-This all will generate `public/` (by default) directory when `brunch build` or `brunch watch` is executed.
+The generated output is placed in the `public/` (by default) directory when `brunch build` or `brunch watch` is executed.
 
 ## Other
-Versions of software the skeleton uses:
+Software Versions used:
 
 * jQuery 1.7.2
-* Ember latest
+* Ember latest (master)
 * Bootstrap 2.0.4
