@@ -56,7 +56,7 @@ Other `app/` directories could contain files that would be compiled. Languages,
 that compile to JS (coffeescript, roy etc.) or js files and located in app are 
 automatically wrapped in module closure so they can be loaded by 
 `require('module/location')`.
-* `app/models.js`, `app/views.js`, and `app/controllers.js` are responsible for loading classes.
+* `app/templates.js`, `app/models.js`, `app/views.js`, and `app/controllers.js` are loaded in `initialize.js` and are responsible for loading their respective classes.
 * `test/` contains unit tests.
 * `vendor/` contains all third-party code. The code wouldn’t be wrapped in
 modules, it would be loaded instantly instead.
