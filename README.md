@@ -1,4 +1,4 @@
-# Brunch with Ember (WIP)
+# Brunch with Ember
 This is a simple ember skeleton for [Brunch](http://brunch.io/).
 
 ## Getting started
@@ -18,6 +18,7 @@ See more info on the [official site](http://brunch.io)
         img/
           glyphicons-halflings-white.png
           glyphicons-halflings.png
+      styles/
       templates/
       models/
       views/

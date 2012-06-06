@@ -21,8 +21,8 @@ exports.config =
           'vendor/scripts/bootstrap.js'
           ]
 
-    stylesheets: 
-      defaultExtension: 'less'
+    stylesheets:
+      defaultExtension: 'css'
       joinTo: 'stylesheets/app.css'
       order:
         before: ['vendor/styles/bootstrap.css']
