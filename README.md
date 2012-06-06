@@ -6,11 +6,11 @@ This is a simple ember skeleton for [Brunch](http://brunch.io/).
 Clone the repo and run `npm install` & `brunch build`.
 See more info on the [official site](http://brunch.io)
 
-## Version
+## Versions (branches)
 
 * `empty` is a clean version of the skeleton with no examples
 * `no-bootstrap` this is the same as `empty` but with bootstrap removed
-* `coffee` is the same as empty but uses coffeescript
+* `coffee` is the same as `empty` but uses coffeescript
 
 ## Usage
     
