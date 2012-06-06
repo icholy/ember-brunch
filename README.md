@@ -17,7 +17,6 @@ See more info on the [official site](http://brunch.io)
 	models/
     styles/
     views/
-      	templates/
 	controllers.js
  	models.js
 	views.js
@@ -33,6 +32,10 @@ See more info on the [official site](http://brunch.io)
         bootstrap.js
       styles/
         bootstrap.css
+    /generators
+      model.js
+      view.js
+      controller.js
 
 * `config.coffee` contains configuration of your app. You can set plugins /
 languages that would be used here.
