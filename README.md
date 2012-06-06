@@ -8,12 +8,14 @@ See more info on the [official site](http://brunch.io)
 
 ## Overview
 
-	config.coffee
-	README.md
-	/app/
-    /assets/
-		  index.html
-        images/
+  config.coffee
+  README.md
+  /app/
+    assets/
+      index.html
+      img/
+        glyphicons-halflings-white.png
+        glyphicons-halflings.png
     models/
     styles/
     views/
@@ -22,21 +24,21 @@ See more info on the [official site](http://brunch.io)
     views.js
     app.js
     initialize.js
-    /test/
-		  spec.coffee
-    /vendor/
-      scripts/
-        jquery.js
-        console-helper.js
-        ember-latest.js
-        handlebars-1.0.0.beta.6.js
-        bootstrap.js
-      styles/
-        bootstrap.css
-    /generators
-      model.js
-      view.js
-      controller.js
+  /vendor/
+    scripts/
+      jquery.js
+      console-helper.js
+      ember-latest.js
+      handlebars-1.0.0.beta.6.js
+      bootstrap.js
+    styles/
+      bootstrap.css
+  /test/
+    spec.coffee
+  /generators/
+    model.js
+    view.js
+    controller.js
 
 * `config.coffee` contains configuration of your app. You can set plugins /
 languages that would be used here.
