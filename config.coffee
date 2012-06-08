@@ -29,6 +29,7 @@ exports.config =
         before: ['vendor/styles/bootstrap.css']
 
     templates:
+      precompile: true
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
 
