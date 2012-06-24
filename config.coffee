@@ -35,10 +35,10 @@ exports.config =
       joinTo: 'javascripts/app.js' : /^app/
 
   server:
-    path: 'server.coffee'
-    port: 1234
+    #path: 'server.coffee'
+    port: 3333
     base: '/'
-    run: yes
+    run: no
 
   generators:
     model: (name)->
