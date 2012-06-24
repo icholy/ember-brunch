@@ -6,6 +6,7 @@ path = require 'path'
 exports.config = 
 
   files: 
+    
     javascripts: 
       defaultExtension: 'js',
       joinTo: 
@@ -32,6 +33,12 @@ exports.config =
       precompile: true
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
+
+  server:
+    path: 'server.coffee'
+    port: 1234
+    base: '/'
+    run: yes
 
   generators:
     model: (name)->

@@ -1,4 +1,7 @@
-exports.startServer = (port, path, express, helpers, callback = (->)) ->
+express = require 'express'
+
+exports.startServer = (port, path, callback = (->)) ->
+
     server = express.createServer()
 
     server.configure ->
@@ -13,4 +16,3 @@ exports.startServer = (port, path, express, helpers, callback = (->)) ->
 
     server.listen parseInt port, 10
     server.on 'listening', callback
-    helpers.log "[Brunch]: application starting on http://0.0.0.0:#{port}."
