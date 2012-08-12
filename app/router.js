@@ -5,8 +5,12 @@ App.Router = Em.Router.extend({
     root: Em.Route.extend({
         index: Em.Route.extend({
             route: '/',
+            redirectsTo: 'home'
+        }),
+        home: Em.Route.extend({
+            route: '/home',
             connectOutlets: function(route){
-                console.log('connect');
+                console.log('home');
             }
         })
     })

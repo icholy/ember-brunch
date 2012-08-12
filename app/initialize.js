@@ -7,4 +7,4 @@ require('controllers');
 require('views');
 require('router');
 
-App.initialize(App.Router.create());
+App.initialize();
