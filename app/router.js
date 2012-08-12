@@ -10,9 +10,7 @@ App.Router = Em.Router.extend({
         }),
 
         home: Em.Route.extend({
-            
             route: '/home',
-
             connectOutlets: function(router, context){
                 router.get('applicationController').connectOutlet('home');
             }
