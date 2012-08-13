@@ -8,7 +8,7 @@ App.Router = Em.Router.extend({
         
         index: Em.Route.extend({
             route: '/',
-            redurectsTo: ''
+            redirectsTo: ''
         })
     })
 })
