@@ -1,5 +1,5 @@
 var App = require('app');
 
-App.HomeController = Em.Controller.extend({
+App.HomeController = Em.ObjectController.extend({
     theMan: null
 });
