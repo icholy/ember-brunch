@@ -1,5 +1,5 @@
 # Brunch with Ember
-This is a simple ember skeleton for [Brunch](http://brunch.io/) with working and up to date handlebars pre-compilng :)
+This is a simple ember skeleton for [Brunch](http://brunch.io/) with working and up to date **handlebars template pre-compilng** :)
 
 ## Getting started
 
@@ -10,8 +10,6 @@ See more info on the [official site](http://brunch.io)
 
 * `master` contains some demo code to give an understanding of how things should work
 * `empty` is a clean version of the skeleton with no examples
-* `no-bootstrap` this is the same as `empty` but with bootstrap removed
-* `coffee` is the same as `empty` but uses coffeescript
 
 ## Usage
     
@@ -31,7 +29,6 @@ then visit `localhost:3333`
 ## Overview
 
     config.coffee
-    server.coffee
     package.json
     README.md
     /app/
@@ -50,15 +47,15 @@ then visit `localhost:3333`
       views.js
       controllers.js
       app.js
+      router.js
       initialize.js
     /vendor/
       scripts/
-        jquery.js
+        jquery-1.8.0.js
         console-helper.js
         ember-latest.js
         ember-data-latest.js
         handlebars-1.0.0.beta.6.js
-        bootstrap.js
       styles/
         bootstrap.css
     /public/
@@ -67,10 +64,6 @@ then visit `localhost:3333`
       javascripts/
     /test/
       spec.coffee
-    /generators/
-      model.js
-      view.js
-      controller.js
 
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
 * `app/` and subdirectories (excluding `app/assets`) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via `require('module/location')`.
@@ -85,6 +78,5 @@ The generated output is placed in the `public/` (by default) directory when `bru
 ## Other
 Software Versions used:
 
-* jQuery 1.7.2
-* Ember latest (master)
-* Bootstrap 2.0.4
+* jQuery 1.8.0
+* Ember latest
