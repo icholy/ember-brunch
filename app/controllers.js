@@ -2,3 +2,4 @@
 
 require('controllers/application');
 require('controllers/home');
+require('controllers/bob');
