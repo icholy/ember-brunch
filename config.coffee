@@ -35,15 +35,7 @@ exports.config =
       joinTo: 'javascripts/app.js' : /^app/
 
   server:
-    #path: 'server.coffee'
     port: 3333
     base: '/'
     run: no
 
-  generators:
-    model: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'model.js')).toString().replace("\#{name}", name)
-    view: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'view.js')).toString().replace("\#{name}", name)
-    controller: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'controller.js')).toString().replace("\#{name}", name)

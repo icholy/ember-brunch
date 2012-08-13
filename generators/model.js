@@ -1,7 +1,5 @@
 var App = require('app');
 
-module.exports = App.Models.#{name} = Em.Object.extend({
-    init: function(){
-        this._super();
-    }
+App.#{name} = Em.Object.extend({
+
 }); 
