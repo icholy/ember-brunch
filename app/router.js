@@ -1,45 +1,58 @@
 var App = require('app');
 
-App.Router = Em.Router.extend({
+// App.Router = Em.Router.extend({
     
-    enableLogging: true,
+//     enableLogging: true,
 
-    root: Em.Route.extend({
+//     root: Em.Route.extend({
         
-        index: Em.Route.extend({
-            route: '/',
-            redirectsTo: 'home'
-        }),
+//         index: Em.Route.extend({
+//             route: '/',
+//             redirectsTo: 'home'
+//         }),
 
-        home: Em.Route.extend({
-            route: '/home',
+//         home: Em.Route.extend({
+//             route: '/home',
             
-            doBob: function(router, event){
-                router.transitionTo('bob');
-            },
+//             doBob: function(router, event){
+//                 router.transitionTo('bob');
+//             },
 
-            connectOutlets: function(router, context){
-                router.get('applicationController').connectOutlet('home');
-            }
-        }),
+//             connectOutlets: function(router, context){
+//                 router.get('applicationController').connectOutlet('home');
+//             }
+//         }),
 
-        bob: Em.Route.extend({
-            route: '/bob',
+//         bob: Em.Route.extend({
+//             route: '/bob',
 
-            doHome: function(router, event){
-                router.transitionTo('home');
-            },
+//             doHome: function(router, event){
+//                 router.transitionTo('home');
+//             },
 
-            connectOutlets: function(router, context){
+//             connectOutlets: function(router, context){
 
-                var theMan = App.BobModel.create().setProperties({
-                    firstName: 'bob',
-                    lastName: 'marley',
-                    lyrics: 'no woman no cry!'
-                });
+//                 var theMan = App.BobModel.create().setProperties({
+//                     firstName: 'bob',
+//                     lastName: 'marley',
+//                     lyrics: 'no woman no cry!'
+//                 });
 
-                router.get('applicationController').connectOutlet('bob', theMan);
-            }
-        })
-    })
-})
+//                 router.get('applicationController').connectOutlet('bob', theMan);
+//             }
+//         })
+//     })
+// })
+
+App.Router.map(function(match) {
+  match("/").to("index");
+});
+
+App.IndexRoute = Ember.Route.extend({
+    // renderTemplate: function() {
+    //     debugger;
+    //     this.render('index', {
+    //         into: 'application'
+    //     })
+    // }
+});
