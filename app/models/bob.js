@@ -2,7 +2,6 @@ var App = require('app'),
 	attr = DS.attr;
 
 App.Bob = DS.Model.extend({
-
     firstName : attr('string'),
     lastName  : attr('string'),
     lyrics    : attr('string'),
@@ -14,6 +13,7 @@ App.Bob = DS.Model.extend({
 });
 
 App.Bob.FIXTURES = [{
+    id: '0',
     firstName: 'bob',
     lastName: 'marley',
     lyrics: 'no woman no cry!'
