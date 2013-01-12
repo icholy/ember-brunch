@@ -1,13 +1,20 @@
-var App = require('app');
+var App = require('app'),
+	attr = DS.attr;
 
-App.BobModel = Em.Object.extend({
+App.Bob = DS.Model.extend({
 
-    firstName : null,
-    lastName  : null,
-    lyrics    : null,
+    firstName : attr('string'),
+    lastName  : attr('string'),
+    lyrics    : attr('string'),
 
     fullName: function(){
         return this.get('firstName') + ' ' + this.get('lastName');
     }.property('firstName', 'lastName')
 
 });
+
+App.Bob.FIXTURES = [{
+    firstName: 'bob',
+    lastName: 'marley',
+    lyrics: 'no woman no cry!'
+}];
