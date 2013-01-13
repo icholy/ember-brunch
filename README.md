@@ -37,6 +37,7 @@ then visit `localhost:3333`
         img/
           glyphicons-halflings-white.png
           glyphicons-halflings.png
+      routes/
       styles/
       templates/
       models/
@@ -48,14 +49,16 @@ then visit `localhost:3333`
       controllers.js
       app.js
       router.js
+      routes.js
+      store.js
       initialize.js
     /vendor/
       scripts/
-        jquery-1.8.0.js
+        jquery-1.8.3.min.js
         console-helper.js
         ember-latest.js
         ember-data-latest.js
-        handlebars-1.0.0.beta.6.js
+        handlebars-1.0.rc1.js
       styles/
         bootstrap.css
     /public/
@@ -78,5 +81,6 @@ The generated output is placed in the `public/` (by default) directory when `bru
 ## Other
 Software Versions used:
 
-* jQuery 1.8.0
+* jQuery 1.8.3
 * Ember latest
+* Handlebars 1.0 rc1
