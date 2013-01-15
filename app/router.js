@@ -1,7 +1,7 @@
 var App = require('app');
 
-App.Router.map(function(match) {
-  match('/').to('index');
-  match('/home').to('home');
-  match('/bob').to('bob');
+App.Router.map(function() {
+	this.route("index", { path: "/"});
+	this.route("home");
+	this.route("bob");
 });
