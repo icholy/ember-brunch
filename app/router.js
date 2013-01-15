@@ -1,5 +1,5 @@
 var App = require('app');
 
-App.Router.map(function(match) {
-  match('/').to('index');
+App.Router.map(function() {
+	this.route('index', { path: '/'});
 });
