@@ -34,6 +34,9 @@ exports.config =
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
 
+  modules:
+    addSourceURLs: true
+
   server:
     port: 3333
     base: '/'
