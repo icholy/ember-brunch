@@ -36,25 +36,16 @@ then visit `localhost:3333`
     │   │   │   └── glyphicons-halflings-white.png
     │   │   └── index.html
     │   ├── controllers
-    │   │   ├── application.js
-    │   │   ├── bob.js
-    │   │   └── home.js
     │   ├── initialize.js
     │   ├── models
-    │   │   └── bob.js
     │   ├── routes
-    │   │   ├── bob.js
-    │   │   └── index.js
     │   ├── styles
     │   │   └── application.css
     │   ├── templates
     │   │   ├── application.hbs
-    │   │   ├── bob.hbs
-    │   │   └── home.hbs
+    │   │   └── index.hbs
     │   └── views
-    │       ├── application.js
-    │       ├── bob.js
-    │       └── home.js
+    │       └── index.js
     ├── config.coffee
     ├── package.json
     ├── README.md
@@ -70,6 +61,7 @@ then visit `localhost:3333`
         │   └── jquery-1.9.0.min.js
         └── styles
             └── bootstrap.css
+
 
 
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
