@@ -31,6 +31,7 @@ exports.config =
 
     templates:
       precompile: true
+      root: 'templates'
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js' : /^app/
 
