@@ -1,11 +1,56 @@
+
 window.App = require('app');
 
-require('templates');
-require('models');
-require('controllers');
-require('views');
-require('store');
-require('router');
-require('routes');
+//////////////////////////////////
+// Templates
+//////////////////////////////////
+
+require('templates/application');
+require('templates/home');
+require('templates/bob');
+
+//////////////////////////////////
+// Models
+//////////////////////////////////
+
+require('models/bob');
+
+/////////////////////////////////
+// Controllers
+/////////////////////////////////
+
+
+
+/////////////////////////////////
+// Views
+/////////////////////////////////
+
+require('views/bob');
+
+/////////////////////////////////
+// Routes
+/////////////////////////////////
+
+require('routes/index');
+require('routes/bob');
+
+/////////////////////////////////
+// Store
+/////////////////////////////////
+
+App.Store = DS.Store.extend({
+  revision: 11,
+  adapter: DS.FixtureAdapter.create()
+});
+
+/////////////////////////////////
+// Router
+/////////////////////////////////
+
+App.Router.map(function() {
+  this.route('index', { path: '/'});
+  this.route('home');
+  this.route('bob');
+});
 
 App.initialize();
