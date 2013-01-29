@@ -56,8 +56,8 @@ then visit `localhost:3333`
         │   ├── bootstrap.js
         │   ├── console-helper.js
         │   ├── ember-data-latest.js
-        │   ├── ember-latest.js
-        │   ├── handlebars-1.0.rc.1.js
+        │   ├── ember-1.0.0-pre.4.js
+        │   ├── handlebars-1.0.rc.2.js
         │   └── jquery-1.9.0.min.js
         └── styles
             └── bootstrap.css
@@ -78,5 +78,5 @@ The generated output is placed in the `public/` (by default) directory when `bru
 Software Versions used:
 
 * jQuery 1.9.0
-* Ember latest
-* Handlebars 1.0 rc1
+* jQuery 1.9.0
+* Handlebars 1.0 rc2
