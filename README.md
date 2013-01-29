@@ -28,50 +28,54 @@ then visit `localhost:3333`
 
 ## Overview
 
-    config.coffee
-    package.json
-    README.md
-    /app/
-      assets/
-        index.html
-        img/
-          glyphicons-halflings-white.png
-          glyphicons-halflings.png
-      routes/
-      styles/
-      templates/
-      models/
-      views/
-      controllers/
-      templates.js
-      models.js
-      views.js
-      controllers.js
-      app.js
-      router.js
-      routes.js
-      store.js
-      initialize.js
-    /vendor/
-      scripts/
-        jquery-1.8.3.min.js
-        console-helper.js
-        ember-latest.js
-        ember-data-latest.js
-        handlebars-1.0.rc1.js
-      styles/
-        bootstrap.css
-    /public/
-      img/
-      stylesheets/
-      javascripts/
-    /test/
-      spec.coffee
+    ├── app
+    │   ├── app.js
+    │   ├── assets
+    │   │   ├── img
+    │   │   │   ├── glyphicons-halflings.png
+    │   │   │   └── glyphicons-halflings-white.png
+    │   │   └── index.html
+    │   ├── controllers
+    │   │   ├── application.js
+    │   │   ├── bob.js
+    │   │   └── home.js
+    │   ├── initialize.js
+    │   ├── models
+    │   │   └── bob.js
+    │   ├── routes
+    │   │   ├── bob.js
+    │   │   └── index.js
+    │   ├── styles
+    │   │   └── application.css
+    │   ├── templates
+    │   │   ├── application.hbs
+    │   │   ├── bob.hbs
+    │   │   └── home.hbs
+    │   └── views
+    │       ├── application.js
+    │       ├── bob.js
+    │       └── home.js
+    ├── config.coffee
+    ├── package.json
+    ├── README.md
+    ├── test
+    │   └── spec.coffee
+    └── vendor
+        ├── scripts
+        │   ├── bootstrap.js
+        │   ├── console-helper.js
+        │   ├── ember-data-latest.js
+        │   ├── ember-latest.js
+        │   ├── handlebars-1.0.rc.1.js
+        │   └── jquery-1.8.3.min.js
+        └── styles
+            └── bootstrap.css
+
 
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
 * `app/` and subdirectories (excluding `app/assets`) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via `require('module/location')`.
 * `app/assets` contains images / static files. The contents of the directory are copied to `public/` without any modification.
-* `app/templates.js`, `app/models.js`, `app/views.js`, and `app/controllers.js` are loaded in `initialize.js` and are responsible for loading their respective classes.
+* `app/initialize.js`is responsible for loading all the `controllers`/`views`/etc.. classes.
 * `test/` contains unit tests.
 * `vendor/` contains all third-party code. The code wouldn’t be wrapped in
 modules, it would be loaded instantly instead.
