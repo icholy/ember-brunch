@@ -36,9 +36,6 @@ then visit `localhost:3333`
     │   │   │   └── glyphicons-halflings-white.png
     │   │   └── index.html
     │   ├── controllers
-    │   │   ├── application.js
-    │   │   ├── bob.js
-    │   │   └── home.js
     │   ├── initialize.js
     │   ├── models
     │   │   └── bob.js
@@ -52,9 +49,7 @@ then visit `localhost:3333`
     │   │   ├── bob.hbs
     │   │   └── home.hbs
     │   └── views
-    │       ├── application.js
-    │       ├── bob.js
-    │       └── home.js
+    │       └── bob.js
     ├── config.coffee
     ├── package.json
     ├── README.md
@@ -64,9 +59,9 @@ then visit `localhost:3333`
         ├── scripts
         │   ├── bootstrap.js
         │   ├── console-helper.js
+        │   ├── ember-1.0.0-pre.4.js
         │   ├── ember-data-latest.js
-        │   ├── ember-latest.js
-        │   ├── handlebars-1.0.rc.1.js
+        │   ├── handlebars-1.0.rc.2.js
         │   └── jquery-1.9.0.min.js
         └── styles
             └── bootstrap.css
@@ -86,5 +81,5 @@ The generated output is placed in the `public/` (by default) directory when `bru
 Software Versions used:
 
 * jQuery 1.9.0
-* Ember latest
-* Handlebars 1.0 rc1
+* Ember 1.0.0 pre4
+* Handlebars 1.0 rc2
