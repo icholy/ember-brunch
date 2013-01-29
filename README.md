@@ -67,7 +67,7 @@ then visit `localhost:3333`
         │   ├── ember-data-latest.js
         │   ├── ember-latest.js
         │   ├── handlebars-1.0.rc.1.js
-        │   └── jquery-1.8.3.min.js
+        │   └── jquery-1.9.0.min.js
         └── styles
             └── bootstrap.css
 
@@ -85,6 +85,6 @@ The generated output is placed in the `public/` (by default) directory when `bru
 ## Other
 Software Versions used:
 
-* jQuery 1.8.3
+* jQuery 1.9.0
 * Ember latest
 * Handlebars 1.0 rc1
