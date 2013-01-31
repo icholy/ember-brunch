@@ -56,7 +56,7 @@ then visit `localhost:3333`
         │   ├── bootstrap.js
         │   ├── console-helper.js
         │   ├── ember-data-latest.js
-        │   ├── ember-1.0.0-pre.4.js
+        │   ├── ember-latest.js
         │   ├── handlebars-1.0.rc.2.js
         │   └── jquery-1.9.0.min.js
         └── styles
