@@ -78,5 +78,5 @@ The generated output is placed in the `public/` (by default) directory when `bru
 Software Versions used:
 
 * jQuery 1.9.0
-* jQuery 1.9.0
+* Ember 1.0.0-pre.4
 * Handlebars 1.0 rc2
