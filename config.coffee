@@ -1,5 +1,5 @@
-fs   = require 'fs'
-path = require 'path'
+fs      = require 'fs'
+sysPath = require 'path'
 
 # See docs at http://brunch.readthedocs.org/en/latest/config.html.
 
@@ -37,6 +37,17 @@ exports.config =
 
   modules:
     addSourceURLs: true
+
+  # allow _ prefixed templates so partials work
+  conventions:
+    ignored: (path) ->
+      startsWith = (string, substring) ->
+        string.indexOf(substring, 0) is 0
+      sep = sysPath.sep
+      if path.indexOf("app#{sep}templates#{sep}") is 0
+        false
+      else
+        startsWith sysPath.basename(path), '_'
 
   server:
     port: 3333
