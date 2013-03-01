@@ -1,4 +1,10 @@
+# Warning
+
+I've stopped using ember and am no longer maintaining this repository.
+If someone is maintaining an up to date ember skeleton, let me know and I'll link to it here.
+
 # Brunch with Ember
+
 This is a simple ember skeleton for [Brunch](http://brunch.io/) with working and up to date **handlebars template pre-compilng** :)
 
 ## Getting started
