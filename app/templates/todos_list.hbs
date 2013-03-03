@@ -1,0 +1,30 @@
+<!-- 
+  actions on this template
+
+  editTodo, toggleTodo, removeTodo
+
+  will trigger a matching action name on
+  the template's controller (FilteredTodosController)
+  with the specific todo as an argument.
+
+  If the action is not implemented on the controller
+  the event will bubble up to the application's
+  current state (i.e. route)
+-->
+<ul id="todo-list">
+  {{#each todo in controller}}
+    <li {{action editTodo todo on="doubleClick"}} {{bindAttr class=":view todo.completed:completed todo.editing:editing"}}>
+      {{#unless todo.editing}}
+        <input type="checkbox" 
+               class="toggle" 
+               {{bindAttr checked="todo.completed"}}
+               {{action toggleTodo todo}}
+         >
+        <label>{{todo.title}}</label>
+        <button {{action removeTodo todo}} class="destroy" ></button>
+      {{else}}
+        {{view Todos.EditTodoTextField todoBinding="todo"}}
+      {{/unless}}
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,66 @@
+<section id="main">
+  <!-- 
+    a dynamic section of the view hierarchy that will be filled in
+    response to routing changes. In this application, it gets filled
+    with the todos_list template when you enter into specific routes.
+  -->
+  {{outlet}}
+
+  <!-- 
+    The view for toggling done-ness of all the todos.
+    it will trigger a call to this template's controller (TodosController)
+    implementation of allAreDone
+  -->
+  {{view Ember.Checkbox
+         elementId="toggle-all"
+         checkedBinding="allAreDone"}}
+</section>
+
+<footer id="footer">
+  <span id="todo-count">
+    <!-- 
+      oneLeft and remaining are both computed properties
+      of this template's controller (TodosController).
+      Check there to see how they work
+    -->
+    {{#if oneLeft }}
+      <strong>{{remaining}}</strong> item left
+    {{else}}
+      <strong>{{remaining}}</strong> items left
+    {{/if}}
+  </span>
+
+  <div>
+    <ul id="filters">
+      <li>
+        {{#linkTo todos.allTodos currentWhen="todos.allTodos" activeClass="selected"}}All{{/linkTo}}
+      </li>
+      <li>
+        {{#linkTo todos.activeTodos currentWhen="todos.activeTodos" activeClass="selected"}}Active{{/linkTo}}
+      </li>
+      <li>
+        {{#linkTo todos.completedTodos currentWhen="todos.completedTodos" activeClass="selected"}}Completed{{/linkTo}}
+      </li>
+    </ul>
+  <div>
+
+
+  <div id="clear-completed">
+    <!-- 
+      completed is a computed property
+      of this template's controller (TodosController).
+      Check there to see how it works
+    -->
+    {{#if completed}}
+      <!-- 
+        calls clearCompleted on this templates controller (TodosController).
+        If not implemented there will bubble up to the application's
+        current state (i.e. route)
+      -->
+      <button {{action clearCompleted}} {{bindAttr class="buttonClass:hidden"}} >
+        Clear completed ({{completed}})
+      </button>
+    {{/if}}
+  </div>
+
+</footer>
