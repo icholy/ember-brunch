@@ -4,5 +4,5 @@
   should manage for you.
 */
 module.exports = Ember.Application.create({
-  rootElement: window.TESTING ? '#qunit-fixture' : '#todoapp'
+  rootElement: window.TESTING ? '#mocha' : '#todoapp'
 });

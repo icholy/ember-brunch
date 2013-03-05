@@ -12,7 +12,8 @@
     "node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
-    "start": "brunch watch --server"
+    "start": "brunch watch --server",
+    "test": "./node_modules/.bin/mocha-phantomjs http://localhost:3333/test/"
   },
   "dependencies": {
     "javascript-brunch": ">= 1.0 < 1.5",
@@ -23,8 +24,7 @@
     "ember-handlebars-brunch": "git://github.com/icholy/ember-handlebars-brunch.git"
   },
   "devDependencies": {
-    "mocha": "0.14.0",
-    "expect.js": "0.1.2",
+    "mocha-phantomjs": "2.0.1",
     "express": "2.5.8"
   }
 }

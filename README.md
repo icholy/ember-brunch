@@ -31,8 +31,29 @@ if you wanted to use the `empty` skeleton branch
 Once the project has been created, you can start a server by running
 
     brunch watch --server
+    
+Or
+
+    npm start
+
+
 
 then visit `localhost:3333`
+
+
+## Tests (mocha-phantomjs)
+
+Tests can be run via commandline
+
+	npm test
+	
+*Note: Do not use `brunch test` -- tests require `mocha-phantomjs`*
+	
+Or in a browser
+
+    brunch watch --server
+
+then visit `localhost:3333/test/`
 
 ## Overview
 
