@@ -16,6 +16,8 @@ See more info on the [official site](http://brunch.io)
 
 * `master` contains some demo code to give an understanding of how things should work
 * `empty` is a clean version of the skeleton with no examples
+* `todomvc` is a port of Addy Osmani's [TodoMVC](http://addyosmani.github.com/todomvc/) by way of [Trek Glowacki grunt-based port](https://github.com/trek/ember-todos-with-build-tools-tests-and-other-modern-conveniences)
+
 
 ## Usage
     
@@ -29,45 +31,86 @@ if you wanted to use the `empty` skeleton branch
 Once the project has been created, you can start a server by running
 
     brunch watch --server
+    
+Or
+
+    npm start
+
+
 
 then visit `localhost:3333`
 
+
+## Tests (mocha-phantomjs)
+
+Tests can be run via commandline
+
+	npm test
+	
+*Note: Do not use `brunch test` -- tests require `mocha-phantomjs`*
+	
+Or in a browser
+
+    brunch watch --server
+
+then visit `localhost:3333/test/`
+
 ## Overview
 
-    ├── app
-    │   ├── app.js
-    │   ├── assets
-    │   │   ├── img
-    │   │   │   ├── glyphicons-halflings.png
-    │   │   │   └── glyphicons-halflings-white.png
-    │   │   └── index.html
-    │   ├── controllers
-    │   ├── initialize.js
-    │   ├── models
-    │   ├── routes
-    │   ├── styles
-    │   │   └── application.css
-    │   ├── templates
-    │   │   ├── application.hbs
-    │   │   └── index.hbs
-    │   └── views
-    │       └── index.js
-    ├── config.coffee
-    ├── package.json
-    ├── README.md
-    ├── test
-    │   └── spec.coffee
-    └── vendor
-        ├── scripts
-        │   ├── bootstrap.js
-        │   ├── console-helper.js
-        │   ├── ember-data-latest.js
-        │   ├── ember-latest.js
-        │   ├── handlebars-1.0.rc.2.js
-        │   └── jquery-1.9.0.min.js
-        └── styles
-            └── bootstrap.css
-
+	├── app
+	│   ├── app.js
+	│   ├── assets
+	│   │   ├── img
+	│   │   │   ├── bg.png
+	│   │   │   ├── glyphicons-halflings-white.png
+	│   │   │   └── glyphicons-halflings.png
+	│   │   └── index.html
+	│   ├── controllers
+	│   │   ├── filtered_todos_controller.js
+	│   │   └── todos_controller.js
+	│   ├── initialize.js
+	│   ├── models
+	│   │   ├── store.js
+	│   │   └── todo.js
+	│   ├── routes
+	│   │   ├── active_todos_route.js
+	│   │   ├── all_todos_route.js
+	│   │   ├── completed_todos_route.js
+	│   │   ├── router.js
+	│   │   └── todos_route.js
+	│   ├── styles
+	│   │   └── application.css
+	│   ├── templates
+	│   │   ├── application.hbs
+	│   │   ├── todos.hbs
+	│   │   └── todos_list.hbs
+	│   └── views
+	│       ├── create_todo_textfield.js
+	│       └── edit_todo_textfield.js
+	├── README.md
+	├── test
+	│   ├── assets
+	│   │   └── test
+	│   │       ├── index.html
+	│   │       └── sinon-1.6.0.js
+	│   ├── models
+	│   │   └── todo_test.coffee
+	│   └── vendor
+	│       ├── scripts
+	│       │   ├── chai-1.4.0.js
+	│       │   ├── mocha-1.7.3.js
+	│       │   ├── sinon-chai-2.2.0.js
+	│       │   └── test-helper.js
+	│       └── styles
+	│           └── mocha-1.7.2.css
+	└── vendor
+	    └── scripts
+	        ├── bootstrap.js
+	        ├── console-helper.js
+	        ├── ember-data-latest.js
+	        ├── ember-latest.js
+	        ├── handlebars-1.0.rc.2.js
+	        └── jquery-1.9.0.min.js* 
 
 
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.

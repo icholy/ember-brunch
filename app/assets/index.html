@@ -1,14 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Example brunch application</title>
+	<title>ember.js • TodoMVC</title>
     <link rel="stylesheet" href="stylesheets/app.css">
     <script src="javascripts/vendor.js"></script>
     <script src="javascripts/app.js"></script>
     <script>require('initialize');</script>
 </head>
 <body>
-    <!-- ApplicationView -->
+  <!--
+    The HTML into which the Ember application will be
+    injected. Anything outside of this div is
+    for display only.
+  -->
+  <!-- ApplicationView -->
+  <section id="todoapp"></section>
+
+  <footer id="info">
+    <!-- 
+      This section is part of the application's display not
+      controlled by Ember. 
+    -->
+    <p>Double-click to edit a todo</p>
+    <p>
+      Created by
+      <a href="http://github.com/tomdale">Tom Dale</a>,
+      <a href="http://github.com/addyosmani">Addy Osmani</a>,
+      <a href="http://github.com/trek">Trek Glowacki</a>
+    </p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+  </footer>
+
 </body>
 </html>
