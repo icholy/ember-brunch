@@ -89,9 +89,20 @@ then visit `localhost:3333/test/`
 	│       └── edit_todo_textfield.js
 	├── README.md
 	├── test
+	│   ├── assets
+	│   │   └── test
+	│   │       ├── index.html
+	│   │       └── sinon-1.6.0.js
 	│   ├── models
-	│   │   └── todo_test.js
-	│   └── spec.coffee
+	│   │   └── todo_test.coffee
+	│   └── vendor
+	│       ├── scripts
+	│       │   ├── chai-1.4.0.js
+	│       │   ├── mocha-1.7.3.js
+	│       │   ├── sinon-chai-2.2.0.js
+	│       │   └── test-helper.js
+	│       └── styles
+	│           └── mocha-1.7.2.css
 	└── vendor
 	    └── scripts
 	        ├── bootstrap.js
