@@ -3,6 +3,10 @@
 I've stopped using ember and am no longer maintaining this repository.
 If someone is maintaining an up to date ember skeleton, let me know and I'll link to it here.
 
+# Alternatives
+**[Cinder Plate](https://github.com/edgycircle/cinder-plate)**  
+It uses CoffeeScript and SASS. Handlebars templates live in separate files (unlike the usual approach of putting everthing in the `index.html`) and get pre-compiled. Cinder Plate is also able to generate a production build where JS and CSS files are minified. In addition the appropriate version of Ember.js (debug or production) is included.
+
 # Brunch with Ember
 
 This is a simple ember skeleton for [Brunch](http://brunch.io/) with working and up to date **handlebars template pre-compilng** :)
