@@ -7,6 +7,8 @@ If someone is maintaining an up to date ember skeleton, let me know and I'll lin
 **[Cinder Plate](https://github.com/edgycircle/cinder-plate)**  
 It uses CoffeeScript and SASS. Handlebars templates live in separate files (unlike the usual approach of putting everthing in the `index.html`) and get pre-compiled. Cinder Plate is also able to generate a production build where JS and CSS files are minified. In addition the appropriate version of Ember.js (debug or production) is included.
 
+**[Brunch with Ember Reloaded](https://github.com/gcollazo/brunch-with-ember-reloaded)**  
+An updated version of the Brunch with Ember skeleton that uses: **CoffeeScrip**, **Stylus**, **Auto Reload**, and **UglifyJS**. The skeleton also has a script to download, build and copy the latest version of *ember-data.js*, generators for common types of files and tests templates.
 # Brunch with Ember
 
 This is a simple ember skeleton for [Brunch](http://brunch.io/) with working and up to date **handlebars template pre-compilng** :)
